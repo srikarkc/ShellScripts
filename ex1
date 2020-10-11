@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# This script is to see if the file path exists or not
+
+read DIRECTORY
+
+if [ -d $DIRECTORY ]; then
+	# Control will enter here if $DIRECTORY exists
+	echo "Directory exists"
+fi
+
+if [ ! -d $DIRECTORY ]; then
+	# Control will enter here if $DIRECTORY does not exist
+	echo "Directory does not exist"
+fi
